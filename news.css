@@ -1,0 +1,130 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image: url("images/homepagebg.jpg");
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    background-color: rgba(0,0,0,0.5);
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img{
+    width: 75px;
+    margin-left: 20px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    margin-right: 20px;
+}
+
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-links ul li ::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li :hover::after{
+    width: 100%;
+}
+
+section{ 
+    margin-top: 100px;
+    margin-bottom: -50px;
+}
+.error{
+    text-align: center;
+    color: white;
+}   
+
+footer{
+    background: rgba(0,0,0,0.5);
+    padding:30px 0px;
+    margin-top: 250px;
+    font-family: 'Poppins', sans-serif;
+    text-align:center;
+    }
+    
+footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:white;
+    font-size:0.8em;
+    }
+    
+footer .row a{
+    text-decoration:none;
+    color:black;
+    transition:0.5s;
+    }
+    
+footer .row a:hover{
+    color:#fff;
+    }
+    
+footer .row ul{
+    width:100%;
+    }
+    
+footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+    
+@media (max-width:720px){
+    nav img{
+    width:50px;
+    margin-left: 0px;
+    }
+    .nav-links{
+    text-align: justify;    
+    }
+    footer i{
+    color: white;
+    }
+    footer{
+    text-align:center;
+    padding:5%;
+    }
+    footer .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+    footer .row a i{
+    margin:0% 3%;
+    }
+    }
